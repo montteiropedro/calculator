@@ -1,0 +1,65 @@
+:root[data-theme='1'] {
+  /* Backgrounds colors */
+  --main-background: #3a4764;
+  --toggle-keypad-background: #232c43;
+  --display-background: #182034;
+
+  /* Keys colors */
+  --key-primary: #eae3dc;
+  --key-primary-shadow: #b4a597;
+
+  --key-secondary: #637097;
+  --key-secondary-shadow: #404e72;
+
+  --key-tertiary: #d03f2f;
+  --key-tertiary-shadow: #93261a;
+
+  /* Text colors */
+  --text-display: #ffffff;
+  --text-primary: #444b5a;
+  --text-secondary: #ffffff;
+}
+
+:root[data-theme='2'] {
+  /* Backgrounds colors */
+  --main-background: #e6e6e6;
+  --toggle-keypad-background: #d1cccc;
+  --display-background: #ededed;
+
+  /* Keys colors */
+  --key-primary: #e5e4e1;
+  --key-primary-shadow: #a69d91;
+
+  --key-secondary: #377f86;
+  --key-secondary-shadow: #1b5f65;
+
+  --key-tertiary: #ca5502;
+  --key-tertiary-shadow: #893901;
+
+  /* Text colors */
+  --text-display: #35352c;
+  --text-primary: #35352c;
+  --text-secondary: #ffffff;
+}
+
+:root[data-theme='3'] {
+  /* Backgrounds colors */
+  --main-background: #160628;
+  --toggle-keypad-background: #1d0934;
+  --display-background: #1d0934;
+
+  /* Keys colors */
+  --key-primary: #341c4f;
+  --key-primary-shadow: #871c9c;
+
+  --key-secondary: #58077d;
+  --key-secondary-shadow: #bc15f4;
+
+  --key-tertiary: #00e0d1;
+  --key-tertiary-shadow: #6cf9f2;
+
+  /* Text colors */
+  --text-display: #ffe53d;
+  --text-primary: #ffe53d;
+  --text-secondary: #ffffff;
+}

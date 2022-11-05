@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="1">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon.png">
+  
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <title>Calculator</title>
+</head>
+<body class="container">
+  <main class="calculator">
+    <div class="options">
+      <div class="toggle toggle--sound">
+        <span class="toggle__title">SOUND</span>
+        <div class="toggle__status">
+          <span>ON</span>
+          <span>OFF</span>
+        </div>
+        <div class="toggle__body toggle__body--sound" enabled><div class="toggle__dot"></div></div>
+      </div>
+
+      <div class="toggle toggle--theme">
+        <span class="toggle__title">THEME</span>
+        <div class="toggle__status">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+        <div class="toggle__body toggle__body--theme" data-theme="1"><div class="toggle__dot"></div></div>
+      </div>
+    </div>
+
+    <div class="display">
+      <span data-display-history></span>
+      <span data-display-result>0</span>
+    </div>
+
+    <div class="buttons container">
+      <button data-number value="7">7</button>
+      <button data-number value="8">8</button>
+      <button data-number value="9">9</button>
+      <button data-delete>DEL</button>
+      <button data-number value="4">4</button>
+      <button data-number value="5">5</button>
+      <button data-number value="6">6</button>
+      <button data-operation value="+">+</button>
+      <button data-number value="1">1</button>
+      <button data-number value="2">2</button>
+      <button data-number value="3">3</button>
+      <button data-operation value="-">-</button>
+      <button data-number value=".">.</button>
+      <button data-number value="0">0</button>
+      <button data-operation value="÷">÷</button>
+      <button data-operation value="x">x</button>
+      <button data-reset>RESET</button>
+      <button data-equals>=</button>
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer noopener">Frontend Mentor</a>,</span>
+    <span>coded by <a href="https://www.github.com/montteiropedro" target="_blank" rel="noreferrer noopener">Pedro Monteiro</a>.</span>
+  </footer>
+
+  <script src="./javascript/calculator.js"></script>
+  <script src="./javascript/audios.js"></script>
+  <script src="./javascript/themes.js"></script>
+</body>
+</html>
