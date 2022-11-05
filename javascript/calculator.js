@@ -146,9 +146,19 @@ class Calculator {
       this.displayResult.textContent = equation;
 
       if (reduceHistory) {
-        this.currentOperand = equation;
-        this.history = equation;
-        this.displayHistory.textContent = equation;
+        if (this.history === '' && this.currentOperand === '') return this.displayResult.textContent = '0';
+
+        this.currentOperand = Math.abs(equation).toString();
+
+        if (/^-/.test(equation)) {
+          this.history = `0 - ${this.currentOperand}`;
+          console.log('history: ', this.history);
+          this.displayHistory.textContent = this.history;
+        }
+        else {
+          this.history = equation;
+          this.displayHistory.textContent = equation;
+        }
       }
     }
   }
